@@ -71,7 +71,7 @@ main {
     color: pale-blue;
 }
 
-/* Picky the time frame for stat section */
+/* Pick the time frame for stat section */
 .profile .profile__timeframe {
     background-color: var(--dark-blue);
     color: var(--pale-blue);
@@ -82,6 +82,14 @@ main {
     justify-content: center;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
+}
+
+.profile .profile__timeframe > p {
+    cursor: pointer;
+}
+
+.profile .profile__timeframe > p:hover {
+    transform: scale(1.1)
 }
 
 /* Stats section */
@@ -209,6 +217,13 @@ main {
         background-size: 15% 100%;
         top: -30%;
     }
-    
+   
+}
+
+/* Styled to be defined with javascript */
+/* Active timeframe */
+.active {
+    color: white;
+    font-weight: 500;
 }
 
